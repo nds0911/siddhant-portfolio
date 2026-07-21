@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #0a0f1a;
+  --color-navy-900: #0f1729;
+  --color-navy-800: #162033;
+  --color-navy-700: #1e2a42;
+  --color-gold-400: #d4a853;
+  --color-gold-500: #c49a3c;
+  --color-gold-600: #a67c2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-navy-950 text-slate-100 antialiased;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold-500) 35%, transparent);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4a853 0%, #f0d78c 50%, #c49a3c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-container {
+  @apply mx-auto max-w-5xl px-6 py-20 md:px-8;
+}
+
+.card-surface {
+  @apply rounded-2xl border border-white/8 bg-navy-900/70 backdrop-blur-sm;
+}
+
+.skill-chip {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-200 transition-all duration-200;
+}
+
+.skill-chip:hover {
+  @apply border-gold-500/40 bg-gold-500/10 text-gold-400 -translate-y-0.5;
+}
+
+.light body,
+.light {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.light .card-surface {
+  @apply border-slate-200 bg-white shadow-sm;
+}
+
+.light .skill-chip {
+  @apply border-slate-200 bg-slate-100 text-slate-700;
+}
+
+.light .skill-chip:hover {
+  @apply border-gold-500/50 bg-amber-50 text-gold-600;
+}
+
+.light ::selection {
+  background: color-mix(in srgb, var(--color-gold-500) 25%, transparent);
+}
