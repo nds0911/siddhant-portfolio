@@ -4,7 +4,7 @@ export const profile = {
   tagline: "Distributed Systems · Scala · Kafka · Enterprise SaaS · Cloud-Native Architecture",
   location: "Bengaluru, India",
   availability: "Actively seeking opportunities",
-  relocation: "Open to relocation (US, Europe, APAC)",
+  relocation: "Open to relocation globally",
   phone: "+91 9112303091",
   email: "sids9rao@gmail.com",
   linkedin: "https://linkedin.com/in/siddhant-rao-a696471b4",
@@ -56,6 +56,11 @@ export const skills = [
     category: "Testing & Quality",
     items: ["JUnit", "ScalaTest", "Testcontainers", "Integration Testing", "TDD"],
     proficiency: "85% code coverage maintained",
+  },
+  {
+    category: "AI-Assisted Development",
+    items: ["Claude AI", "Cursor IDE", "GitHub Copilot", "AI Code Generation", "Prompt Engineering"],
+    proficiency: "Leveraging AI tools for accelerated development",
   },
   {
     category: "Tools & Collaboration",

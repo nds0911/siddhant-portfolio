@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Page geometry
+\geometry{left=0.75in, right=0.75in, top=0.75in, bottom=0.75in}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+% Section formatting
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{Siddhant Rao}}\\[5pt]
+    Bengaluru, India (Open to relocate globally)\\[5pt]
+    \faPhone\ +91 9112303091 \quad
+    \faEnvelope\ \href{mailto:raosiddhant0911@gmail.com}{raosiddhant0911@gmail.com} \quad
+    \faLinkedin\ \href{https://linkedin.com/in/siddhant-rao-a696471b4}{Siddhant Rao}
+\end{center}
+
+\vspace{5pt}
+
+% Summary
+\section*{Summary}
+Backend Software Engineer with 4+ years of experience building distributed systems, event-driven architectures, and enterprise SaaS platforms. Expertise in Scala, Java, Apache Kafka, microservices, and cloud-native application development. Delivered large-scale synchronization frameworks that improved platform scalability, migration efficiency, and operational reliability. Strong background in backend engineering, production support, observability, and performance optimization. Experienced in designing resilient systems that support high-volume enterprise integrations and mission-critical business workflows.
+
+% Core Skills
+\section*{Core Skills}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{Programming Languages:} Scala, Java, SQL, TypeScript
+    \item \textbf{Distributed Systems:} Apache Kafka, Event-Driven Architecture, Distributed Processing, Asynchronous Messaging, Data Synchronization, Event Streaming
+    \item \textbf{Backend Engineering:} Microservices, REST APIs, GraphQL, Spring Boot, Service-Oriented Architecture, Backend Development
+    \item \textbf{Databases:} SAP HANA, SQL Server, MySQL, Data Modeling, Query Optimization
+    \item \textbf{Cloud \& Platform Engineering:} Docker, Kubernetes, Cloud Foundry, CI/CD Pipelines, Containerization, Platform Reliability
+    \item \textbf{Observability \& Quality:} Dynatrace, Root Cause Analysis, Monitoring, Logging, Unit Testing, Integration Testing, JUnit
+    \item \textbf{Development Tools:} Git, Gerrit, Swagger, Agile Development, SDLC
+    \item \textbf{AI-Assisted Development:} Claude AI, Cursor IDE, GitHub Copilot, AI-powered code generation and debugging, prompt engineering for development workflows
+\end{itemize}
+
+% Experience
+\section*{Experience}
+
+\resumeSubheading
+{SAP Labs India}{August 2022 -- Present}
+{Software Developer}{Bengaluru, India}
+
+\vspace{3pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item Designed and implemented scalable Java-based backend services supporting enterprise customization workflows across thousands of supplier integrations in SaaS environments.
+    \item Engineered Kafka-based event-driven architectures enabling near real-time synchronization between legacy and next-generation platforms, reducing migration execution time by over 90\%.
+    \item Optimized distributed system performance by introducing asynchronous processing models and efficient data access patterns, improving API response latency by 25\%.
+    \item Strengthened platform reliability by implementing schema validation, backward compatibility controls, and automated data quality mechanisms, reducing integration failures by 30\%.
+    \item Led production incident resolution across distributed microservices using Dynatrace monitoring and root cause analysis, improving system stability and operational resilience.
+\end{itemize}
+
+\vspace{8pt}
+
+\resumeSubheading
+{Info Tech Corporation India}{June 2021 -- July 2021}
+{Software Engineering Intern}{Goa, India}
+
+\vspace{3pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item Developed and deployed government web applications using C\#, ASP.NET, and SQL Server, supporting workflow automation and public service operations.
+    \item Built backend services and database integration layers to support structured data processing and system interoperability across application modules.
+    \item Improved application maintainability by implementing modular service design and structured database access patterns.
+    \item Supported end-to-end testing and deployment activities ensuring system stability during release cycles.
+\end{itemize}
+
+% Projects
+\section*{Projects}
+
+\textbf{Enterprise Synchronization Framework (Forward \& Reverse Sync)}
+
+\vspace{3pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item Built a Kafka-based distributed synchronization platform enabling forward and reverse synchronization of enterprise customizations across SaaS environments.
+    \item Designed transformation pipelines ensuring schema compatibility between legacy and next-generation enterprise systems.
+    \item Implemented fault-tolerant event-driven workflows ensuring consistency, scalability, and near real-time data synchronization across distributed services.
+    \item Eliminated manual migration processes and significantly improved operational efficiency across enterprise integration workflows.
+\end{itemize}
+
+\vspace{8pt}
+
+\textbf{Legion -- Anonymous Chat Platform}
+
+\vspace{3pt}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item Developed a real-time anonymous messaging platform using Django, AJAX, and asynchronous communication.
+    \item Implemented backend messaging logic supporting low-latency message exchange and concurrent user interactions.
+    \item Designed lightweight scalable architecture enabling real-time communication handling across multiple sessions.
+\end{itemize}
+
+% Education
+\section*{Education}
+
+\resumeSubheading
+{BITS Pilani}{2022 -- 2026}
+{Master of Technology in Software Engineering (CGPA: 9.0/10)}{Rajasthan, India}
+
+\vspace{8pt}
+
+\resumeSubheading
+{Christ University}{2019 -- 2022}
+{Bachelor of Science in Computer Science (CGPA: 9.58/10)}{Bengaluru, India}
+
+% Languages
+\section*{Languages}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{English} -- Full Professional Proficiency (C1)
+\end{itemize}
+
+\end{document}
